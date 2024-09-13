@@ -1,11 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useEffect, useState } from 'react';
+import { WebView } from 'react-native-webview';
+import { StyleSheet, View, Platform } from 'react-native';
+import { useUUID } from './Security/useUUID';
 
 export default function App() {
+  const uuid = useUUID();
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <WebView
+        style={styles.webview}
+        source={{ uri: `https://preinstall5.j.netgolf.fr/acces-app.php?uuid=${uuid}` }}
+      />
     </View>
   );
 }
@@ -13,8 +19,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  },
+  webview: {
+    flex: 1,
+    marginTop: Platform.OS === 'ios' ? 50 : 0,
   },
 });
+
+//516056305

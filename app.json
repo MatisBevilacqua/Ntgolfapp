@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "NetGolf",
+    "name": "Golf Meaux-Boutigny",
     "slug": "NetGolf",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -18,10 +18,19 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.testntgol.NetGolf"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7a8d3e03-ea94-4c4e-a56f-5e11fa4761d9"
+      }
     }
   }
 }
