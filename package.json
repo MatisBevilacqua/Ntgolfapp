@@ -11,6 +11,7 @@
   "dependencies": {
     "eas": "^0.1.0",
     "expo": "~51.0.28",
+    "expo-camera": "~15.0.15",
     "expo-device": "~6.0.2",
     "expo-secure-store": "~13.0.2",
     "expo-status-bar": "~1.12.1",

@@ -12,14 +12,21 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.testntgol.NetGolf",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Cette application utilise la caméra pour scanner des QR codes."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.testntgol.NetGolf"
+      "package": "com.testntgol.NetGolf",
+      "permissions": [
+        "CAMERA"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -29,7 +36,7 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "7a8d3e03-ea94-4c4e-a56f-5e11fa4761d9"
+        "projectId": "22d2839f-30a6-4723-be16-ce42b9daddca"
       }
     }
   }
